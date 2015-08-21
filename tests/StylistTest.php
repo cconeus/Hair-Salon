@@ -132,5 +132,30 @@
             $this->assertEquals([$test_stylist2], Stylist::getAll());
         }
 
+        //Final test, checking that reference to other table is being called correctly
+        function test_GetClients()
+        {
+            //Arrange
+            $name = "Sarah";
+            $id = null;
+            $test_stylist = new Stylist($name, $id);
+            $test_stylist->save();
+
+            $client = "Cecil Bertram Beaversnatch, Esq.";
+            $stylist_id = $test_stylist->getId();
+            $test_client = new Client($client, $stylist_id, $id);
+            $test_client->save();
+
+            $client2 = "Prentis Mortimer Ramsbottom IX";
+            $stylist_id2 = $test_stylist->getId();
+            $test_client2 = new Client($restaurant, $stylist_id, $id);
+            $test_client2->save();
+
+            //Act
+            $result = $test_stylist->getClients();
+
+            //Assert
+            $this->assertEquals([$test_client, $test_client2], $result);
+        }
     }
  ?>
