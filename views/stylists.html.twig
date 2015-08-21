@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+        <link rel="stylesheet" href="/css/styles.css" media="screen" charset="utf-8">
+        <title>Cuisine Me!</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Cuisines</h1>
+
+            {% if cuisines is not empty %}
+             <p>Here are all of your cuisines: </p>
+             <ul>
+                 {% for cuisine in cuisines %}
+                    <li>{{ cuisine.getCuisineName }}</li>
+                 {% endfor %}
+             </ul>
+            {% endif %}
+
+            <form action="/cuisines" method="post">
+                <label for="cuisine_name">Cuisine name</label>
+                <input id="cuisine_name" type="text" name="cuisine_name">
+
+                <button type="submit">Add cuisine</button>
+            </form>
+            <form action="/" method="post">
+                <button type="submit" class="btn btn-danger">Clear cusinies</button>
+            </form>
+            <p><a href="/">Home</a></p>
+        </div>
+    </body>
+</html>

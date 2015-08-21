@@ -30,7 +30,7 @@
                 $test_Stylist = new Stylist($name, $id);
                 $test_Stylist->save();
 
-                $client = "Aalto";
+                $client = "Cecil Bertram Beaversnatch, Esq.";
                 $cuisine_id = $test_Stylist->getId();
                 $test_client = new Client($client, $cuisine_id, $id);
                 $test_client->save();
@@ -50,7 +50,7 @@
                 $test_Stylist = new Stylist($name, $id);
                 $test_Stylist->save();
 
-                $client = "Aalto";
+                $client = "Cecil Bertram Beaversnatch, Esq.";
                 $cuisine_id = $test_Stylist->getId();
                 $test_client = new Client($client, $cuisine_id, $id);
                 $test_client->save();
@@ -70,7 +70,7 @@
                 $test_Stylist = new Stylist($name, $id);
                 $test_Stylist->save();
 
-                $client = "Aalto";
+                $client = "Cecil Bertram Beaversnatch, Esq.";
                 $cuisine_id = $test_Stylist->getId();
                 $test_client = new Client($client, $cuisine_id, $id);
 
@@ -90,12 +90,12 @@
                 $test_Stylist = new Stylist($name, $id);
                 $test_Stylist->save();
 
-                $client = "Aalto";
+                $client = "Cecil Bertram Beaversnatch, Esq.";
                 $cuisine_id = $test_Stylist->getId();
                 $test_client = new Client($client, $cuisine_id, $id);
                 $test_client->save();
 
-                $client2 = "Aalto";
+                $client2 = "Prentis Mortimer Ramsbottom IX";
                 $address2 = "123 Belmont";
                 $phone2 = "123-456-7890";
                 $stylist_id2 = $test_Stylist->getId();
@@ -118,12 +118,12 @@
                 $test_Stylist = new Stylist($name, $id);
                 $test_Stylist->save();
 
-                $client = "Aalto";
+                $client = "Cecil Bertram Beaversnatch, Esq.";
                 $cuisine_id = $test_Stylist->getId();
                 $test_client = new Client($client, $cuisine_id, $id);
                 $test_client->save();
 
-                $client2 = "HobNob";
+                $client2 = "Prentis Mortimer Ramsbottom IX";
                 $stylist_id2 = $test_Stylist->getId();
                 $test_client2 = new Client($client, $cuisine_id, $id);
                 $test_client2->save();
@@ -144,12 +144,12 @@
                 $test_Stylist = new Stylist($name, $id);
                 $test_Stylist->save();
 
-                $client = "Aalto";
+                $client = "Cecil Bertram Beaversnatch, Esq.";
                 $cuisine_id = $test_Stylist->getId();
                 $test_client = new Client($client, $cuisine_id, $id);
                 $test_client->save();
 
-                $client2 = "HobNob";
+                $client2 = "Prentis Mortimer Ramsbottom IX";
                 $stylist_id2 = $test_Stylist->getId();
                 $test_client2 = new Client($client, $cuisine_id, $id);
                 $test_client2->save();
@@ -169,19 +169,19 @@
                 $test_Stylist = new Stylist($name, $id);
                 $test_Stylist->save();
 
-                $client = "Aalto";
+                $client = "Cecil Bertram Beaversnatch, Esq.";
                 $cuisine_id = $test_Stylist->getId();
                 $test_client = new Client($client, $cuisine_id, $id);
                 $test_client->save();
 
 
-                $new_client_name = "HobNob";
+                $new_client_name = "Prentis Mortimer Ramsbottom IX";
 
                 //Act
                 $test_client->update($new_client_name);
 
                 //Assert
-                $this->assertEquals("HobNob", $test_client->getName());
+                $this->assertEquals("Prentis Mortimer Ramsbottom IX", $test_client->getName());
             }
 
             function testDelete()
@@ -192,12 +192,12 @@
                 $test_Stylist = new Stylist($name, $id);
                 $test_Stylist->save();
 
-                $client = "Aalto";
+                $client = "Cecil Bertram Beaversnatch, Esq.";
                 $cuisine_id = $test_Stylist->getId();
                 $test_client = new Client($client, $cuisine_id, $id);
                 $test_client->save();
 
-                $client2 = "HobNob";
+                $client2 = "Prentis Mortimer Ramsbottom IX";
                 $stylist_id2 = $test_Stylist->getId();
                 $test_client2 = new Client($client, $cuisine_id, $id);
                 $test_client2->save();

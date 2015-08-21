@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+        <link rel="stylesheet" href="/css/styles.css" media="screen" charset="utf-8">
+        <title>Cuisine Me!</title>
+    </head>
+    <body>
+        <h1>Update the {{ cuisine.getCuisineName }} cuisine </h1>
+
+        <form action="/cuisines/{{ cuisine.getId }}" method="post">
+          <input name="_method" type="hidden" value="patch">
+
+          <label for="cuisine_name">Rename your cuisine:</label>
+          <input id="name" name="cuisine_name" type="text">
+
+          <button type="submit" class= "btn btn-info">Update</button>
+        </form>
+    </body>
+</html>
