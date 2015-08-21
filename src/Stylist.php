@@ -54,7 +54,7 @@
         function save()
         {
             $GLOBALS['DB']->exec("INSERT INTO stylist (name) VALUES ('{$this->getStylistName()}')");
-$this->id = $GLOBALS['DB']->lastInsertId();
+            $this->id = $GLOBALS['DB']->lastInsertId();
         }
 
         function update($new_stylist)

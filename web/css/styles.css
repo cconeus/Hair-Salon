@@ -1,16 +1,18 @@
 body {
-    background-image: url(http://i.ytimg.com/vi/GNHfrVyrl3A/maxresdefault.jpg);
+    background-image: url(http://uchb.gitphp.com/wp-content/uploads/2015/03/shutterstock_5228212.jpg);
+    opacity: 1;
     background-size: cover;
+    background-color: black;
     background-repeat: no-repeat;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color:#fff;
+h1 {
+    color:#5aaeff;
     text-shadow: 1px 1px 2px black;
 }
 
-label, p {
-    color:#fff;
+label, p, h2, h3, h4, h5, h6 {
+    color:#b6e0ff;
     text-shadow: 1px 1px 2px black;
 }
 

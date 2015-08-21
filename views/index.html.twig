@@ -6,30 +6,38 @@
     </head>
     <body>
         <div class="container">
-            <h1>Stylist tracker, a brand new app for managing clients!</h1>
-            <h3>Add a new Stylist: </h3>
+            <div class="row" align="center">
+                <h1>Stylist tracker, a brand new app for managing clients!</h1>
+            </div>
 
-            <form action="/stylists" method="post">
-                <label for="stylist_name">Stylist name: </label>
-                <input type="text" name="stylist_name" id="stylist_name">
+            <div class="row" align="center">
+                <div class="col-sm-6">
+                    <h3>Add a new Stylist: </h3>
 
-                <button type="submit" class="btn btn-info">Add Stylist!</button>
-            </form>
+                    <form action="/stylists" method="post">
+                        <label for="stylist_name">Stylist name: </label>
+                        <input type="text" name="stylist_name" id="stylist_name">
 
-            {% if stylists is not empty %}
-            <p>Here are all your stylists: </p>
-            <ul>
-                {% for stylist in stylists %}
-                    <li><a href="/stylists/{{ stylist.getId }}">{{ stylist.getStylistName }}</a></li>
-                {% endfor %}
-            </ul>
-                {% else %}
-                <p>There are no stylists yet! Add some to get started!</p>
-            {% endif %}
+                        <button type="submit" class="btn btn-info">Add Stylist!</button>
+                    </form>
+                </div>
 
-            <form action="/delete_stylists" method="post">
-                <button type="submit" class="btn btn-danger">Clear stylists!</button>
-            </form>
+                <div class="col-sm-6">
+                    {% if stylists is not empty %}
+                    <p>Here are all your stylists: </p>
+                    <ul>
+                        {% for stylist in stylists %}
+                            <li><a href="/stylists/{{ stylist.getId }}">{{ stylist.getStylistName }}</a></li>
+                        {% endfor %}
+                    </ul>
+                        {% else %}
+                        <p>There are no stylists yet! Add some to get started!</p>
+                    {% endif %}
+
+                    <form action="/delete_stylists" method="post">
+                        <button type="submit" class="btn btn-danger">Clear stylists!</button>
+                    </form>
+                </div>
         </div>
     </body>
 </html>
