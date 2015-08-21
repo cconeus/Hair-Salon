@@ -1,12 +1,12 @@
-# Clash of Clans website
+# Hair Salon Management App!
 
-##### _Similar to a TO DO list, Cuisine Me lets you add your favorite dishes and display the restaurants within them, August 19th, 2015_
+##### __
 
 #### By _**Dana Sharman**_
 
 ## Description
 
-Cuisine Me is an application that allows you to add a dish (or cuisine) into the app and within that dish (or cuisine) you're able to add a list of restaurants underneath that cuisine on a separate page.
+
 
 ## Setup
 
@@ -30,7 +30,7 @@ Cuisine Me is an application that allows you to add a dish (or cuisine) into the
 ### Legal
 
 
-Copyright (c) 2015 **_{Dana Sharman}_**
+Copyright (c) 2015 **_Dana Sharman_**
 
 This software is licensed under the MIT license.
 
