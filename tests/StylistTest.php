@@ -19,7 +19,7 @@
         protected function tearDown()
         {
             Stylist::deleteAll();
-            //Client::deleteAll();
+            Client::deleteAll();
         }
 
         //Testing save, getAll and deleteAll functions first to ensure it's properly storing and removing information
@@ -68,7 +68,7 @@
         }
 
         //Moving on to ensure that the data being stored/recalled is being executed properly, testing for id and name fields
-        function test_getCuisineName()
+        function test_getStylistName()
         {
             //Arrange
             $name = "Sarah";
