@@ -1,0 +1,19 @@
+body {
+    background-image: url(http://i.ytimg.com/vi/GNHfrVyrl3A/maxresdefault.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color:#fff;
+    text-shadow: 1px 1px 2px black;
+}
+
+label, p {
+    color:#fff;
+    text-shadow: 1px 1px 2px black;
+}
+
+button {
+    text-shadow: 1px 1px 2px black;
+}

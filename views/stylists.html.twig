@@ -2,29 +2,29 @@
     <head>
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
         <link rel="stylesheet" href="/css/styles.css" media="screen" charset="utf-8">
-        <title>Cuisine Me!</title>
+        <title>Stylist Me!</title>
     </head>
     <body>
         <div class="container">
-            <h1>Cuisines</h1>
+            <h1>Stylists</h1>
 
-            {% if cuisines is not empty %}
-             <p>Here are all of your cuisines: </p>
+            {% if stylists is not empty %}
+             <p>Here are all of your stylists: </p>
              <ul>
-                 {% for cuisine in cuisines %}
-                    <li>{{ cuisine.getCuisineName }}</li>
+                 {% for stylist in stylists %}
+                    <li>{{ stylist.getStylistName }}</li>
                  {% endfor %}
              </ul>
             {% endif %}
 
-            <form action="/cuisines" method="post">
-                <label for="cuisine_name">Cuisine name</label>
-                <input id="cuisine_name" type="text" name="cuisine_name">
+            <form action="/stylists" method="post">
+                <label for="stylist_name">Stylist name</label>
+                <input id="stylist_name" type="text" name="stylist_name">
 
-                <button type="submit">Add cuisine</button>
+                <button type="submit">Add stylist</button>
             </form>
             <form action="/" method="post">
-                <button type="submit" class="btn btn-danger">Clear cusinies</button>
+                <button type="submit" class="btn btn-danger">Clear Stylists</button>
             </form>
             <p><a href="/">Home</a></p>
         </div>

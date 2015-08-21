@@ -6,7 +6,7 @@
 
 
     $app = new Silex\Application();
-    
+
     $server = 'mysql:host=localhost:8889;dbname=hair_salon';
     $username = 'root';
     $password = 'root';

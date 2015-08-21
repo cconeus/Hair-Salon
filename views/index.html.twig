@@ -2,33 +2,33 @@
     <head>
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
         <link rel="stylesheet" href="/css/styles.css" media="screen" charset="utf-8">
-        <title>Cuisine Me!</title>
+        <title>Stylist Me!</title>
     </head>
     <body>
         <div class="container">
-            <h1>Welcome to Cuisine Me!</h1>
-            <h3>Create a new Cuisine: </h3>
+            <h1>Stylist tracker, a brand new app for managing clients!</h1>
+            <h3>Add a new Stylist: </h3>
 
-            <form action="/cuisines" method="post">
-                <label for="cuisine_name">Cuisine name: </label>
-                <input type="text" name="cuisine_name" id="cuisine_name">
+            <form action="/stylists" method="post">
+                <label for="stylist_name">Stylist name: </label>
+                <input type="text" name="stylist_name" id="stylist_name">
 
-                <button type="submit" class="btn btn-info">Add Cuisine!</button>
+                <button type="submit" class="btn btn-info">Add Stylist!</button>
             </form>
 
-            {% if cuisines is not empty %}
-            <p>Here are all your cuisines: </p>
+            {% if stylists is not empty %}
+            <p>Here are all your stylists: </p>
             <ul>
-                {% for cuisine in cuisines %}
-                    <li><a href="/cuisines/{{ cuisine.getId }}">{{ cuisine.getCuisineName }}</a></li>
+                {% for stylist in stylists %}
+                    <li><a href="/stylists/{{ stylist.getId }}">{{ stylist.getStylistName }}</a></li>
                 {% endfor %}
             </ul>
                 {% else %}
-                <p>There are no cuisines yet! Add some!</p>
+                <p>There are no stylists yet! Add some to get started!</p>
             {% endif %}
 
-            <form action="/delete_cuisines" method="post">
-                <button type="submit" class="btn btn-danger">Clear cuisines!</button>
+            <form action="/delete_stylists" method="post">
+                <button type="submit" class="btn btn-danger">Clear stylists!</button>
             </form>
         </div>
     </body>
