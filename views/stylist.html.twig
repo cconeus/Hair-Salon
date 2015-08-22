@@ -12,19 +12,15 @@
             </div>
 
             <div class="row" align="center">
-                <div class="col-sm-6">
                     {% if clients is not empty %}
-                    <p>Here are the clients:</p>
-                    <ul>
+                    <p>Here are {{ stylist.getStylistName }}'s clients:</p>
+
                         {% for client in clients %}
-                            <h2> {{client.getName }} </h2>
+                            <h4>{{client.getName }}</h4>
 
                         {% endfor %}
-                    </ul>
                     {% endif %}
 
-                </div>
-            <div class="col-sm-6">
                 <h2>Add a Client</h2>
 
                 <div class="form-group">

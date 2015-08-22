@@ -93,7 +93,7 @@
                 $stylist_id = $stylist->getId();
 
                 if ($stylist_id == $search_id) {
-                    $found_stylist = $stylists;
+                    $found_stylist = $stylist;
                 }
 
             return $found_stylist;
